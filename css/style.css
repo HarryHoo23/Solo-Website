@@ -68,6 +68,58 @@ section {
     margin-left: -35px;
 }
 
+/* ====== Social Icons ====== */
+ul.social-list {
+    padding: 0;
+    margin-top: 20px;
+}
+
+ul.social-list li {
+    display: inline-block;
+    padding: 0;
+}
+
+ul.social-list li a {
+    border: 1px solid;
+    border-radius: 50%;
+    color: #fff;
+    width: 35px;
+    height: 35px;
+    display: inline-block;
+    line-height: 35px;
+    justify-content: center;
+}
+
+ul.social-list li:nth-child(1) a:hover {
+    background: #3b5998;
+    border-color: transparent;
+    transition: all 300ms linear;
+}
+
+ul.social-list li:nth-child(2) a:hover {
+    background: #00aced;
+    border-color: transparent;
+    transition: all 300ms linear;
+}
+
+ul.social-list li:nth-child(3) a:hover {
+    background: #dd4b39;
+    border-color: transparent;
+    transition: all 300ms linear;
+}
+
+.owl-theme .owl-nav [class*=owl-] {
+    color: #212226;
+    font-size: 40px;
+    margin: 5px;
+    width: 15px;
+    padding: 4px 7px;
+    background: none;
+    display: inline-block;
+    cursor: pointer;
+    border-radius: 3px;
+}
+
 /* ======================== Home Section CSS Style ======================== */
 #home {
     background: none;
@@ -158,6 +210,36 @@ section {
     box-shadow: 2px 2px 2px gray;
 }
 
+.btn-yellow {
+    color: #fff;
+    border: 1px solid #fff;
+    background-color: #f4c613;
+    font-size: 15px;
+}
+
+.btn-yellow:hover,
+.btn-yellow:focus {
+    color: #fff;
+    background-color: #212226;
+    border: 1px solid #212226;
+    box-shadow: 2px 2px 2px gray;
+}
+
+.btn-white {
+    color: #212226;
+    border: 1px solid #fff;
+    background-color: #fff;
+    font-size: 15px;
+}
+
+.btn-white:hover,
+.btn-white:focus {
+    color: #fff;
+    background-color: #212226;
+    border: 1px solid #212226;
+}
+
+
 
 /* Arrow Down */
 #arrow-down {
@@ -203,14 +285,31 @@ section {
     -webkit-transform: rotate(-90deg);
     position: relative;
     top: 60px;
-    left: -63px;
+    left: -53px;
 }
 
-.vertical-heading h2 {
+.vertical-heading h2,
+.horizontal-heading h2 {
     margin: 0 0 0 35px;
     font-size: 42px;
     font-weight: 100;
     line-height: 45px;
+}
+
+.horizontal-heading {
+    margin-bottom: 80px;
+}
+
+.horizontal-heading h5 {
+    color: #f4c613;
+    font-size: 16px;
+    text-transform: uppercase;
+    display: inline-block;
+    margin-bottom: 10px;
+}
+
+.horizontal-heading h2 {
+    margin: 0;
 }
 
 #about-right p:first-child {
@@ -275,8 +374,7 @@ section {
 }
 
 .about-item:hover i,
-.about-item:hover h3
-{
+.about-item:hover h3 {
     transform: translateY(-25px);
     -webkit-transform: translateY(-25px);
     -moz-transform: translateY(-25px);
@@ -294,4 +392,448 @@ section {
     -moz-transition: all 400ms ease-in-out;
     -ms-transition: all 400ms ease-in-out;
     -o-transition: all 400ms ease-in-out;
+}
+
+/* ====== Team Section ====== */
+#team-left .vertical-heading {
+    min-height: 160px;
+}
+
+.team-member {
+    margin: 8px;
+    position: relative;
+}
+
+.team-member-overlay {
+    background-color: rgba(33, 34, 38, .9);
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    opacity: 0;
+    transition: all 300ms linear;
+}
+
+.team-member:hover .team-member-overlay {
+    opacity: 1;
+}
+
+.team-member-info {
+    width: 100%;
+    height: 100%;
+    padding: 80px 0;
+}
+
+.team-member-info h6 {
+    color: #f4c613;
+    font-size: 16px;
+    margin: 0;
+}
+
+.team-member-info p {
+    color: #fff;
+
+}
+
+/* Skill Section in Team */
+.skill {
+    margin-bottom: 20px;
+}
+
+.skill h4 {
+    line-height: 60px;
+    margin: 0;
+    font-weight: normal;
+}
+
+.progress {
+    height: 25px;
+    border-radius: 0;
+    background: #efefef;
+    overflow: visible;
+}
+
+.progress-bar {
+    background-color: #f4c613;
+    position: relative;
+}
+
+.progress-bar span {
+    font-size: 11px;
+    font-weight: 100;
+    font-family: "Open Sans", sans-serif;
+    background: #212226;
+    padding: 3px;
+    position: absolute;
+    left: 97%;
+    top: -47px;
+}
+
+.progress-bar span::before {
+    content: "";
+    border-top: 8px solid #212226;
+    border-left: 6px solid transparent;
+    border-right: 6px solid transparent;
+    position: absolute;
+    bottom: -8px;
+    left: 25%;
+}
+
+
+/* ===== Statement ====== */
+#statement {
+    background: url("../images/tech/tech-quote.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+}
+
+#statement .content-box-lg {
+    background: rgba(0, 0, 0, 0.3)
+}
+
+#tech-statement h3 {
+    color: #fff;
+    font-size: 28px;
+    line-height: 45px;
+}
+
+#tech-statement p {
+    font-size: 15px;
+    color: #f4c613;
+    font-family: "Raleway", sans-serif;
+    margin-top: 8px;
+}
+
+
+/* ===== Section Statement ===== */
+#service-01 {
+    margin: 60px 0;
+}
+
+.service {
+    margin: 35px 0;
+}
+
+.service .icon {
+    font-size: 42px;
+    margin: 0;
+    transition: all 400ms linear;
+}
+
+.service:hover .icon {
+    color: #f4c613;
+    transform: translateX(-20px);
+}
+
+.service h5 {
+    font-size: 12px;
+    text-transform: uppercase;
+    color: #f4c613;
+    margin-bottom: 6px;
+}
+
+.service:hover h5 {
+    color: #212226;
+}
+
+.service h4 {
+    font-size: 24px;
+    margin: 0 0 6px 0;
+}
+
+.service p {
+    line-height: normal;
+    font-family: 'Open Sans', sans-serif;
+}
+
+
+/* Services 2 Reponsive Tabs */
+#services-02 {
+    background: #f4f4f4;
+}
+
+#services-tabs ul {
+    margin-bottom: 40px;
+}
+
+#services-tabs ul li {
+    padding: 5px 30px;
+}
+
+#services-tabs ul li a {
+    font-family: 'Raleway', sans-serif;
+    font-size: 13px;
+    color: #212226;
+    text-transform: uppercase;
+    font-weight: 400;
+    padding: 0;
+    text-decoration: none;
+}
+
+#services-tabs ul li.r-tabs-state-active a {
+    color: #f4c613;
+    font-weight: 700;
+    border-bottom: 3px solid #f4c613;
+    padding-bottom: 5px;
+    transition: border-color 300ms linear;
+}
+
+.service-tab .col-md-6 {
+    padding: 0;
+}
+
+.service-tab img {
+    width: 100%;
+    margin: 0 auto;
+}
+
+.service-tab .tab-bg {
+    background: #fff;
+    padding: 59px 30px;
+    min-height: 481px;
+}
+
+.service-tab h2 {
+    font-size: 48px;
+    color: #bbb;
+    margin-bottom: 20px;
+    font-weight: 100;
+}
+
+.service-tab h3 {
+    font-size: 32px;
+    margin-bottom: 30px;
+}
+
+.service-tab p {
+    line-height: 24px;
+    margin-bottom: 30px;
+}
+
+
+/* ====== portfolio ====== */
+#portfolio .vertical-heading {
+    margin-bottom: 50px;
+}
+
+.row.no-gutters [class*=col-] {
+    padding: 0;
+}
+
+.portfolio-item {
+    overflow: hidden;
+}
+
+#isotope-filters {
+    margin-bottom: 10px;
+    padding: 20px 25px 20px 0;
+}
+
+#isotope-filters button {
+    font-family: "Raleway", sans-serif;
+    font-size: 12px;
+    font-weight: 700;
+    text-transform: uppercase;
+    background: transparent;
+    box-shadow: none;
+    padding-right: 30px;
+}
+
+#isotope-filters button span {
+    display: block;
+    padding-bottom: 5px;
+
+}
+
+#isotope-filters button.active span {
+    color: #f4c613;
+    border-bottom: 3px solid #f4c613;
+}
+
+/* Zoom Effect */
+.portfolio-item img {
+    width: 100%;
+    height: auto;
+    transition: transform 0.3s;
+    -webkit-transform: -webkit-transform 0.3s ease;
+}
+
+.portfolio-item:hover img {
+    transform: scale(1.1);
+}
+
+/* Overlay effect */
+.portfolio-item-overlay {}
+
+
+
+
+
+/* Testimonial Section CSS Style */
+#testimonial {
+    background-color: #f4f4f4;
+    overflow: visible;
+}
+
+#testimonial .vertical-heading {
+    padding: 80px 0;
+}
+
+#testimonial-slider {
+    background-color: #f4c613;
+    border-radius: 20px;
+}
+
+.testimonial {
+    padding: 20px 45px 0 45px;
+    color: #fff;
+}
+
+.testimonial .row {
+    margin-bottom: 25px;
+}
+
+.testimonial h3 {
+    font-size: 32px;
+    line-height: 35px;
+}
+
+.testimonial .starts {
+    font-size: 20px;
+    margin: 20px 0 10px 0;
+}
+
+.testimonial p {
+    line-height: normal;
+    margin: 0;
+    margin-top: 5px;
+    margin-bottom: 20px;
+}
+
+.testimonial .author .author-name-des {
+    width: 106px;
+    margin-top: 25px;
+    text-align: left;
+}
+
+.author .author-name-des p {
+    margin: 0;
+}
+
+
+
+/* Pricing Section */
+.pricing-table {
+    box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.1);
+    border-radius: 6px;
+    padding: 32px 21px;
+    transition: all 400ms linear;
+}
+
+.pricing-table:hover {
+    background: #f4c613;
+}
+
+.pricing-table .type h4 {
+    color: #f4c613;
+    font-size: 24px;
+    margin-bottom: 25px;
+}
+
+.pricing-table .price {
+    border-top: 1px solid #e0e0e0;
+    border-bottom: 1px solid #e0e0e0;
+    padding: 24px 0;
+}
+
+.pricing-table .price h2 {
+    font-family: "Open Sans", sans-serif;
+    font-size: 42px;
+    font-weight: 100;
+    margin: 0 0 0 24px;
+    position: relative;
+}
+
+.pricing-table .price h2 span {
+    font-family: "Raleway", sans-serif;
+}
+
+.pricing-table .price h2 span.dollar {
+    font-size: 20px;
+    font-weight: 300;
+    position: absolute;
+    left: -20px;
+    top: 5px;
+}
+
+.pricing-table .price h2 span.month {
+    font-size: 11px;
+    font-weight: 400;
+    position: absolute;
+    left: 5px;
+    bottom: -12px;
+}
+
+.pricing-table .price p{
+    line-height: normal;
+    font-weight: 200;
+    margin: 0;
+    padding: 0;
+}
+
+.pricing-table ul.package{
+    list-style: none;
+    padding: 20px 0;
+}
+
+.pricing-table ul.package li{
+    font-family: 'Open Sans', sans-serif;
+    font-size: 13px;
+    font-weight: 400;
+    line-height: 40px;
+}
+
+.pricing-table ul.package li i{
+    width: 24px;
+}
+
+.pricing-table .btn-yellow,
+.pricing-table .btn-white {
+    width: 96%;
+}
+
+.pricing-table:hover h4,
+.pricing-table:hover h2,
+.pricing-table:hover p,
+.pricing-table:hover ul.package{
+    color: #fff;
+}
+
+.pricing-table:hover .btn-yellow {
+    background: #fff;
+    color: #212226;
+    border-color: #fff;
+}
+
+.pricing-table:hover .btn-yellow:hover {
+    background: #212226;
+    color: #fff;
+    border-color: #212226;
+}
+
+.pricing-table.black{
+    background: #212226;
+    color: #fff;
+}
+
+.pricing-table.black .type h4{
+    color: #fff;
+}
+
+.pricing-table.black:hover{
+    background: #f4c613;
 }
