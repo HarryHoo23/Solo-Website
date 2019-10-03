@@ -33,13 +33,43 @@
     <link rel="shortcut icon" href="./images/favicon/favicon.ico">
 </head>
 
-<body>
+<body data-spy="scroll" data-target=".navbar" data-offset="65">
     <!-- Preloader -->
     <div id="preloader">
         <div id="status">
             &nbsp;
         </div>
     </div>
+
+    <!-- Heeader Navigation -->
+    <header>
+        <nav class="navbar navbar-fixed-top white-nav-top">
+            <div class="container-fluid">
+                <div class="site-nav-wrapper">
+                    <div class="navbar-header">
+                        <a class="navbar-brand smooth-scroll" href="#home">
+                            <img src="./images/logo/logo-dark.png" alt="logo">
+                        </a>
+                    </div>
+                    <div class="container">
+                        <div class="collapse navbar-collapse">
+                            <ul class="nav navbar-nav navbar-right">
+                                <ul class="nav navbar-nav pull-right">
+                                    <li><a class="smooth-scroll" href="#home">Home</a></li>
+                                    <li><a class="smooth-scroll" href="#about">About</a></li>
+                                    <li><a class="smooth-scroll" href="#team">Team</a></li>
+                                    <li><a class="smooth-scroll" href="#services">Services</a></li>
+                                    <li><a class="smooth-scroll" href="#portfolio">Work</a></li>
+                                    <li><a class="smooth-scroll" href="#blog">Blog</a></li>
+                                    <li><a class="smooth-scroll" href="#contact">Contact</a></li>
+                                </ul>
+                            </ul>
+                        </div><!-- /.navbar-collapse -->
+                    </div>
+                </div>
+            </div><!-- /.container-fluid -->
+        </nav>
+    </header>
 
     <!-- Home Page -->
     <section id="home">
@@ -71,18 +101,17 @@
                 </div>
 
                 <div id="home-btn">
-                    <a class="btn btn-general btn-home" href="#about" title="Start Now" role="button">Start Now</a>
+                    <a class="btn btn-general btn-home smooth-scroll" href="#about" title="Start Now"
+                        role="button">Start Now</a>
                 </div>
             </div>
         </div>
 
         <!-- Arrow Down -->
-        <a href="#about" id="arrow-down">
+        <a href="#about" id="arrow-down" class="smooth-scroll">
             <i class="fa fa-angle-down fa-2x"></i>
         </a>
     </section>
-
-
 
     <!-- About Section -->
     <section id="about">
@@ -1085,70 +1114,352 @@
 
     </section>
 
+    <!-- stats Section -->
+    <section id="stats">
+        <div class="content-box-md">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-12">
+                        <div class="vertical-heading">
+                            <h5>Fun Facts</h5>
+                            <h2>We Deliver<br><strong>Excellent </strong>Services</h2>
+                        </div>
+                    </div>
+                </div>
 
-    <!-- <section id="">
-        
-        <div class="content-box">
+                <div class="row">
+                    <div class="col-md-3">
+                        <!-- stats-01 -->
+                        <div class="stats-item text-center">
+                            <i class="fa fa-bar-chart"></i>
+                            <h3 class="counter">25</h3>
+                            <p>Years Experience</p>
+                        </div>
+                    </div>
 
-            <div class="row">
-
-                <div class="col-md"></div>
+                    <div class="col-md-3">
+                        <!-- stats-02 -->
+                        <div class="stats-item text-center">
+                            <i class="fa fa-codepen"></i>
+                            <h3 class="counter">476</h3>
+                            <p>Projects Done</p>
+                        </div>
+                    </div>
+                    <div class="col-md-3">
+                        <!-- stats-03 -->
+                        <div class="stats-item text-center">
+                            <i class="fa fa-trophy"></i>
+                            <h3 class="counter">120</h3>
+                            <p>Awards Receive</p>
+                        </div>
+                    </div>
+                    <div class="col-md-3">
+                        <!-- stats-04 -->
+                        <div class="stats-item text-center">
+                            <i class="fa fa-users"></i>
+                            <h3 class="counter">253</h3>
+                            <p>Happy Clients</p>
+                        </div>
+                    </div>
+                </div>
 
             </div>
 
         </div>
 
-    </section> -->
-
-    <!-- 
-    <div id="pricing-btn">
-            <a class="btn btn-general btn-yellow" href="#" title="Get Started"
-                    role="button">Get Started</a>
-        </div> -->
-
-    <!-- Temporary Section -->
-    <section>
-        <br>
-        <br>
-        <br>
-        <br>
-        <br>
-        <br>
-        <br>
-        <br>
-        <br>
-        <br>
-        <br>
-        <br>
-        <br>
-        <br>
-        <br>
-        <br>
-        <br>
-        <br>
-        <br>
-        <br>
-        <br>
-        <br>
-        <br>
-        <br>
-        <br>
-        <br>
-        <br>
-        <br>
-        <br>
-        <br>
-        <br>
-        <br>
-        <br>
-        <br>
-        <br>
-        <br>
-        <br>
-        <br>
-        <br>
-        <br>
     </section>
+
+    <!-- clients Section -->
+    <section id="clients">
+        <div class="content-box-sm">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-12">
+
+                        <div class="horizontal-heading text-center">
+                            <h5>Satisfied Clients</h5>
+                            <h2>Our happry <strong>Clients</strong></h2>
+
+                        </div>
+
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="col-md-12">
+                        <div id="clients-list" class="owl-carousel owl-theme">
+                            <!-- client 01 -->
+                            <div class="client">
+                                <img src="./images/client/client-1.png" class="img-responsive" alt="client">
+                            </div>
+
+
+                            <!-- client 02 -->
+                            <div class="client">
+                                <img src="./images/client/client-2.png" class="img-responsive" alt="client">
+                            </div>
+
+
+                            <!-- client 03 -->
+                            <div class="client">
+                                <img src="./images/client/client-3.png" class="img-responsive" alt="client">
+                            </div>
+
+
+                            <!-- client 04 -->
+                            <div class="client">
+                                <img src="./images/client/client-4.png" class="img-responsive" alt="client">
+                            </div>
+
+
+                            <!-- client 05 -->
+                            <div class="client">
+                                <img src="./images/client/client-5.png" class="img-responsive" alt="client">
+                            </div>
+
+
+                            <!-- client 06 -->
+                            <div class="client">
+                                <img src="./images/client/client-6.png" class="img-responsive" alt="client">
+                            </div>
+
+
+                            <!-- client 07 -->
+                            <div class="client">
+                                <img src="./images/client/client-7.png" class="img-responsive" alt="client">
+                            </div>
+
+
+                            <!-- client 08 -->
+                            <div class="client">
+                                <img src="./images/client/client-8.png" class="img-responsive" alt="client">
+                            </div>
+
+
+
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Blog Section -->
+    <section id="blog">
+
+        <div class="content-box-md">
+
+            <div class="container">
+                <div class="row">
+
+                    <div class="col-md-5">
+                        <div class="blog-left">
+                            <div class="vertical-heading">
+                                <h5>Latest News</h5>
+                                <h2>Latest<br>From <strong>Blog</strong></h2>
+                            </div>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam, incidunt culpa!
+                                Deserunt dicta ipsum voluptas explicabo laborum tenetur, voluptatem accusamus cum,
+                                quidem aperiam assumenda reprehenderit quisquam et, incidunt eius atque.</p>
+                        </div>
+                        <div id="blog-btn">
+                            <a href="#" class="btn btn-general btn-yellow" title="View All Posts">View All Posts</a>
+                        </div>
+                    </div>
+
+                    <div class="col-md-7">
+                        <div class="row">
+                            <div class="col-md-6">
+                                <!-- Blog Post 1 -->
+                                <div class="blog-post">
+                                    <h4>Your Post Title</h4>
+                                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum nemo
+                                        accusamus dolores consequatur corporis tempora maxime, eligendi dicta ipsa
+                                        facere reprehenderit magni amet magnam ex. Iste nulla aperiam facere totam.</p>
+                                    <a href="#">Read More ></a>
+
+                                    <div class="post-meta">
+                                        <div class="row">
+                                            <div class="col-md-6">
+                                                <p><img src="./images/blog/user-1.jpg" alt="author" class="img-circle">
+                                                    Daniel Watrous</p>
+                                            </div>
+                                            <div class="col-md-6">
+                                                <p class="text-right">October 02, 2017</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="col-md-6">
+                                <!-- Blog Post 2 -->
+                                <div class="blog-post">
+                                    <h4>Your Post Title</h4>
+                                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum nemo
+                                        accusamus dolores consequatur corporis tempora maxime, eligendi dicta ipsa
+                                        facere reprehenderit magni amet magnam ex. Iste nulla aperiam facere totam.</p>
+                                    <a href="#">Read More ></a>
+
+                                    <div class="post-meta">
+                                        <div class="row">
+                                            <div class="col-md-6">
+                                                <p><img src="./images/blog/user-2.jpg" alt="author" class="img-circle">
+                                                    Harry Porter</p>
+                                            </div>
+                                            <div class="col-md-6">
+                                                <p class="text-right">October 05, 2017</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+
+                </div>
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact">
+        <div class="content-box-md">
+            <div class="container">
+                <div class="row">
+
+                    <div class="col-md-6">
+                        <!-- contact-left -->
+                        <div id="contact-left">
+                            <div class="vertical-heading">
+                                <h5>Who we are</h5>
+                                <h2>Get<br>In<strong>Touch</strong></h2>
+                            </div>
+                            <p>Some random Text Academia created a Personal Website powered
+                                by your Academia Profile page.</p>
+
+                            <div id="id">
+                                <div class="row">
+                                    <div class="col-md-6">
+                                        <!-- First Office -->
+                                        <div class="office">
+                                            <h4>United States</h4>
+                                            <ul class="office-details">
+                                                <li><i class="fa fa-mobile"></i>+(1)42 423 423</li>
+                                                <li><i class="fa fa-envelope-o"></i>solo@gmail.com</li>
+                                                <li><i class="fa fa-map-marker"></i><span>Mina Street building 05<br>New
+                                                        York, USA</span> </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+
+                                    <div class="col-md-6">
+                                        <!-- Second Office -->
+                                        <div class="office">
+                                            <h4>Australia</h4>
+                                            <ul class="office-details">
+                                                <li><i class="fa fa-mobile"></i>+(61)23 523 413</li>
+                                                <li><i class="fa fa-envelope-o"></i>solo@gmail.com</li>
+                                                <li><i class="fa fa-map-marker"></i><span>508 Din Street
+                                                        building<br>Melbourne, Australia</span> </li>
+                                            </ul>
+                                        </div>
+
+                                    </div>
+                                </div>
+                            </div>
+                            <ul class="social-list">
+                                <li><a href="#"><i class="fa fa-facebook"></i></a></li>
+                                <li><a href="#"><i class="fa fa-twitter"></i></a></li>
+                                <li><a href="#"><i class="fa fa-google-plus"></i></a></li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="col-md-6">
+                        <div id="contact-right">
+                            <form>
+                                <h4>Send Message</h4>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reiciendis ducimus cum
+                                    minus recusandae! Commodi voluptatibus ex exercitationem maxime eum pariatur ab
+                                    assumenda vel a sint, earum obcaecati. Facere, modi rerum?</p>
+
+                                <div class="row">
+                                    <div class="col-md-6">
+                                        <div class="form-group">
+                                            <input type="text" class="form-control" id="name" placeholder="Your Name">
+                                        </div>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <div class="form-group">
+                                            <input type="email" class="form-control" id="email" placeholder="Email">
+                                        </div>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <div class="form-group">
+                                            <input type="text" class="form-control" id="phone"
+                                                placeholder="Phone Number">
+                                        </div>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <div class="form-group">
+                                            <input type="email" class="form-control" id="subject" placeholder="Subject">
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="form-group">
+                                    <textarea class="form-control" id="message" placeholder="Message"></textarea>
+                                </div>
+                                <div id="submit-btn">
+                                    <a class="btn btn-general btn-yellow" href="#" title="Submit"
+                                        role="button">Submit</a>
+                                </div>
+                            </form>
+
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+
+    </section>
+
+    <!-- Google Map Section -->
+    <section id="google-map">
+        <div class="heading text-center">
+            <h3>Our Company Location</h3>
+        </div>
+        <div class="container-fluid">
+            <div class="row">
+                <div id="map">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer Section -->
+    <footer class="text-center">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <p>Copyright @copy; 2017 All Rights Reserved By <spvan>SOLO Inc</span>
+                    </p>
+                </div>
+            </div>
+        </div>
+
+        <a href="#home" id="back-to-top" class="btn btn-sm btn-yellow btn-back-to-top smooth-scroll" title="home"
+            role="button">
+            <i class="fa fa-angle-up"></i>
+        </a>
+
+    </footer>
+
 
     <!-- jQuery -->
     <script src="./js/jquery.js"></script>
@@ -1159,6 +1470,7 @@
     <!-- owl.carous JS -->
     <script src="./js/owl.carous/owl.carousel.min.js"></script>
 
+    <!-- Waypoints Plugin -->
     <script src="./js/waypoints/jquery.waypoints.min.js"></script>
 
     <!-- Tab Bar JS -->
@@ -1170,9 +1482,17 @@
     <!-- Isotope -->
     <script src="./js/isotope/isotope.pkgd.min.js"></script>
 
+    <!-- Counter -->
+    <script src="./js/counterjs/jquery.counterup.min.js"></script>
+
+    <!-- Ease jQuery -->
+    <script src="./js/ease/jquery.easing.1.3.js"></script>
+
+    <script async defer
+        src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDtdT9zky6ttY1HijkeYnFQTqNlidB3HDU&callback=initMap"
+        type="text/javascript"></script>
+
     <script src="./js/script.js"></script>
-
-
 
 </body>
 
