@@ -39,9 +39,21 @@ $(document).ready(function () {
         autoplayHoverPause: true,
         nav: true,
         dots: false,
-        navText: ['<i class="fa fa-angle-left fa-2x"></i>', '<i class="fa fa-angle-right fa-2x"></i>']
+        navText: ['<i class="fa fa-angle-left fa-2x"></i>', '<i class="fa fa-angle-right fa-2x"></i>'],
+        responsive: {
+            // Breakpoint from 0 up
+            0: {
+                items: 1
+            },
+            // Breakpoint from 480 up
+            480: {
+                item: 2
+            }
+
+        }
     });
 });
+
 
 // Progress Bar
 $(function () {
@@ -160,7 +172,7 @@ $(window).on('load', function () {
     }
 
     var map = new google.maps.Map(document.getElementById('map'), {
-        zoom: 10,
+        zoom: 15,
         center: myLatlng,
         title: "Click To See Address"
     });
