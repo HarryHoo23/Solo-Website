@@ -175,4 +175,202 @@
         font-size: 20px;
         line-height: 30px;
     }
+
+    .horizontal-heading {
+        margin-bottom: 40px;;
+    }
+
+    .horizontal-heading h2 {
+        font-size: 30px;
+    }
+
+    #services-01 img {
+        margin: 35px 0; 
+    }
+
+    .service, .service .icon {
+        text-align: center;
+    }
+
+    .service h4 {
+        font-size: 18px;
+    }
+
+    .r-tabs-accordion-title {
+        text-align: center;
+        margin-bottom: 10px;
+    }
+
+    .r-tabs-accordion-title a {
+        font-family: 'Raleway', sans-serif;
+        font-size: 13px;
+        color: #212226;
+        text-transform: uppercase;
+        font-weight: 400;
+        padding: 0;
+        text-decoration: none;
+    }
+
+    .r-tabs-accordion-title.r-tabs-state-active a {
+        color: #f4c613;
+        font-weight: 700;
+        border-bottom: 3px solid #f4c613;
+        padding-bottom: 5px;
+        transition: border-color 300ms linear;
+    }
+
+    #services-tabs .tab-bg {
+        text-align: center;
+        padding: 40px 30px;
+    }
+
+    #services-tabs h2 {
+        font-size: 35px;
+    }
+
+    #services-tabs h3 {
+        font-size: 24px;
+    }
+
+    #portfolio {
+        padding-bottom: 0;
+    }
+
+    #isotope-filters button {
+        padding-right: 15px;
+    }
+
+    /* Testimonials */
+    #testimonial {
+        padding-top: 45px;
+    }
+
+    #testimonial .vertical-heading {
+        padding: 10px;
+    }
+
+    .testimonial h3 {
+        font-size: 20px;
+    }
+
+    .testimonial .row {
+        margin: 0;
+    }
+
+    .testimonial .stars {
+        font-size: 16px;
+    }
+
+    .author img {
+        width: 80px !important;
+    }
+
+    /* Pricing Section */
+    .pricing-table {
+        margin-bottom: 30px;
+    }
+
+    .pricing-table .price h2 {
+        font-size: 28px;
+        margin: 0 0 0 16px;
+    }
+
+    /* Stats */
+    .stats-item {
+        margin-bottom: 20px;
+        padding: 25px 5px;
+    }
+
+    .stats-item i {
+        font-size: 30px;
+    }
+
+    .stats-item h3 {
+        font-size: 24px;
+    }
+
+    /* Blog Section */
+    .blog-left {
+        text-align: center;
+        margin-bottom: 30px;
+    }
+
+    #blog-btn {
+        text-align: center;
+        margin-bottom: 20px;
+    }
+
+    .blog-post {
+        margin-bottom: 25px;
+    }
+
+    /* Contact Section */
+    #contact-left {
+        text-align: center;
+    }
+
+    .office {
+        margin-bottom: 30px;
+    }
+
+    ul.office-details li {
+        display: block;
+        margin-top: 25px;
+    }
+
+    ul.office-details li i{
+        width: auto;
+        display: block;
+        margin-bottom: 3px;
+    }
+
+    ul.social-list {
+        margin-bottom: 40px;
+    }
+}
+
+/* Extra Small Devices */
+@media (max-width: 480px) {
+    #home-heading h1 {
+        font-size: 18px;
+    }
+    
+    #home-text p {
+        font-size: 11px;
+        line-height: 16px;
+        margin: 8px 10px 25px 10px;
+    }
+
+    .vertical-heading h2 {
+        font-size: 22px;
+    }
+
+    #isotope-filters {
+        text-align: center;
+    }
+
+    #isotope-filters button {
+        font-size: 10px;
+        padding-right: 13px;
+    }
+
+    .testimonial h3 {
+        font-size: 14px;
+        line-height: 18px;
+    }
+
+    .testimonial .stars {
+        font-size: 13px;
+    }
+}
+
+@media (max-width: 320px) {
+    .testimonial h3 {
+        font-size: 12px;
+        line-height: 16px;
+    }
+
+    .testimonial .stars {
+        font-size: 10px;
+    }
 }
