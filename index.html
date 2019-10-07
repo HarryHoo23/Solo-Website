@@ -8,6 +8,10 @@
 
     <title>Solo - Creative Website</title>
 
+    <!-- Basic SEO -->
+    <meta name="description" content="Creative website development with html5, css3, jQuery & npptstrap framework">
+    <meta name="keywords" content="HTML5, CSS3, jQuery, Bootstrap, web Design, Web Development, Responsive Website, Creative Website">
+
     <link href="https://fonts.googleapis.com/css?family=Raleway:100,200,300,400,500,700&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,700&display=swap" rel="stylesheet">
 
@@ -26,6 +30,9 @@
 
     <!-- Magnific Popup -->
     <link rel="stylesheet" href="/css/magnific/magnific-popup.css">
+
+    <!-- Animate CSS Style -->
+    <link rel="stylesheet" href="/css/animation/animate.css">
 
     <!-- Custom css stylesheet -->
     <link rel="stylesheet" href="./css/style.css">
@@ -51,6 +58,9 @@
             <div class="container-fluid">
                 <div class="site-nav-wrapper">
                     <div class="navbar-header">
+                        <!-- Menu Bars for mobile -->
+                        <span id="mobile-nav-open-btn">&#9776;</span>
+
                         <a class="navbar-brand smooth-scroll" href="#home">
                             <img src="./images/logo/logo-dark.png" alt="logo">
                         </a>
@@ -69,6 +79,22 @@
                                 </ul>
                             </ul>
                         </div><!-- /.navbar-collapse -->
+                    </div>
+
+                    <div id="mobile-nav">
+                        <!-- Mobile menu close button -->
+                        <span id="mobile-nav-close-btn">&times;</span>
+                        <div id="mobile-nav-content">
+                            <ul class="nav">
+                                <li><a class="smooth-scroll" href="#home">Home</a></li>
+                                <li><a class="smooth-scroll" href="#about">About</a></li>
+                                <li><a class="smooth-scroll" href="#team">Team</a></li>
+                                <li><a class="smooth-scroll" href="#services">Services</a></li>
+                                <li><a class="smooth-scroll" href="#portfolio">Work</a></li>
+                                <li><a class="smooth-scroll" href="#blog">Blog</a></li>
+                                <li><a class="smooth-scroll" href="#contact">Contact</a></li>
+                            </ul>
+                        </div>
                     </div>
                 </div>
             </div><!-- /.container-fluid -->
@@ -124,7 +150,7 @@
                 <div class="container">
                     <div class="row">
                         <!-- About the left side -->
-                        <div class="col-md-6 col-sm-6">
+                        <div class="col-md-6 col-sm-6 wow slideInLeft" data-wow-duration="1.5s">
                             <div id="about-left">
                                 <div class="vertical-heading">
                                     <h5>Who we are</h5>
@@ -133,19 +159,23 @@
                             </div>
                         </div>
 
-                        <div class="col-md-6 col-sm-6">
+                        <div class="col-md-6 col-sm-6 wow slideInRight" data-wow-duration="1.5s">
                             <div id="about-right">
-                                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Cupiditate, ipsa expedita vel id ut laborum assumenda necessitatibus hic? Dolores nam obcaecati earum non ad excepturi alias voluptates expedita soluta incidunt!
+                                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Cupiditate, ipsa expedita
+                                    vel id ut laborum assumenda necessitatibus hic? Dolores nam obcaecati earum non ad
+                                    excepturi alias voluptates expedita soluta incidunt!
                                 </p>
 
-                                <p> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laboriosam officiis asperiores quis consequuntur repellendus veritatis dignissimos sapiente, nisi nemo, quo iure deserunt modi consequatur molestiae, illum saepe libero error. Quod!
+                                <p> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laboriosam officiis
+                                    asperiores quis consequuntur repellendus veritatis dignissimos sapiente, nisi nemo,
+                                    quo iure deserunt modi consequatur molestiae, illum saepe libero error. Quod!
                                 </p>
                             </div>
                         </div>
                     </div>
 
                     <div class="row">
-                        <div class="col-md-12">
+                        <div class="col-md-12 wow fadeInUp" data-wow-duration="1.5s">
                             <img src="./images/about/about.png" alt="The picture about solo website"
                                 class="img-responsive">
                         </div>
@@ -160,7 +190,7 @@
                 <div class="container">
                     <div class="row">
                         <div class="col-md-4 col-sm-4">
-                            <div class="about-item text-center">
+                            <div class="about-item text-center wow fadeInLeft" data-wow-duration="2s">
                                 <i class="fa fa-rocket"></i>
                                 <h3>Mission</h3>
                                 <hr>
@@ -170,7 +200,7 @@
                             </div>
                         </div>
 
-                        <div class="col-md-4 col-sm-4">
+                        <div class="col-md-4 col-sm-4 wow fadeInUp" data-wow-duration="2s">
                             <div class="about-item text-center">
                                 <i class="fa fa-eye"></i>
                                 <h3>Vission</h3>
@@ -182,7 +212,7 @@
                         </div>
 
 
-                        <div class="col-md-4 col-sm-4">
+                        <div class="col-md-4 col-sm-4 wow fadeInRight" data-wow-duration="2s">
                             <div class="about-item text-center">
                                 <i class="fa fa-pencil"></i>
                                 <h3>Passion</h3>
@@ -206,7 +236,7 @@
             <div class="container">
                 <div class="row">
                     <!-- Team Left Side -->
-                    <div class="col-md-6 col-sm-6">
+                    <div class="col-md-6 col-sm-6 wow slideInLeft" data-wow-duration="1s">
                         <div id="team-left">
                             <div class="vertical-heading">
                                 <h5>Who we are</h5>
@@ -217,7 +247,7 @@
                         </div>
                     </div>
                     <!-- Team Right Side -->
-                    <div class="col-md-6 col-sm-6">
+                    <div class="col-md-6 col-sm-6 wow slideInRight" data-wow-duration="1s">
                         <div id="team-members" class="owl-carousel owl-theme">
 
                             <!-- Team Member 01 -->
@@ -324,7 +354,7 @@
 
                 <!-- Skill Progress Bar -->
                 <div id="progress-elements">
-                    <div class="row">
+                    <div class="row wow fadeInUp">
                         <div class="col-md-6 col-sm-6">
                             <!-- Skill 1 -->
                             <div class="skill">
@@ -380,6 +410,7 @@
                     </div>
                 </div>
             </div>
+         </div>
     </section>
 
     <!-- The statement section -->
@@ -388,15 +419,15 @@
         <div class="content-box-lg">
             <div class="container">
                 <div class="row">
-                    <div class="col-md-12">
+                    <div class="col-md-12 wow fadeIn">
                         <div id="tech-statement" class="text-center">
                             <h3><i class="fa fa-quote-left"></i>
                                 We design and develop services for customers of all sizes,
                                 <br> specializing in creating stylish,
                                 modern websites and online stores.
                                 <i class="fa fa-quote-right"></i>
-                                <p>- Daniel Watrous</p>
                             </h3>
+                            <p>- Daniel Watrous</p>
                         </div>
                     </div>
                 </div>
@@ -411,7 +442,7 @@
             <div class="content-box-lg">
                 <div class="container">
                     <div class="row">
-                        <div class="col-md-12 text-center">
+                        <div class="col-md-12 text-center wow slideInDown">
                             <div class="horizontal-heading">
                                 <h5>Who We Are</h5>
                                 <h2>Our Services</h2>
@@ -420,11 +451,11 @@
                     </div>
 
                     <div class="row">
-                        <div class="col-md-7 col-sm-7">
+                        <div class="col-md-7 col-sm-7 wow slideInLeft">
                             <img src="./images/services/laptop-lamp.png" alt="The Service Pic" class="img-responsive">
                         </div>
 
-                        <div class="col-md-5 col-sm-5">
+                        <div class="col-md-5 col-sm-5 wow slideInRight">
 
                             <!-- Service 01 -->
                             <div class="service">
@@ -522,7 +553,7 @@
                                             Voluptates ullam repellat nobis quisquam odit, esse obcaecati aliquam nulla
                                             laborum veritatis sequi, impedit sunt nam, possimus repellat nobis quisquam
                                             odit, esse obcaecati aliquam nulla laborum.</p>
-                                        <div id="serivces-02-btn">
+                                        <div id="serivces-02-btn-01">
                                             <a class="btn btn-general btn-yellow" href="#services" title="Get In Touch"
                                                 role="button">Get In Touch</a>
                                         </div>
@@ -554,7 +585,7 @@
                                             odit, esse obcaecati aliquam nulla laborum veritatis sequi,
                                             impedit sunt nam, possimus repellat nobis quisquam odit, esse obcaecati
                                             aliquam nulla laborum.</p>
-                                        <div id="serivces-02-btn">
+                                        <div id="serivces-02-btn-02">
                                             <a class="btn btn-general btn-yellow" href="#services" title="Get In Touch"
                                                 role="button">Get In Touch</a>
                                         </div>
@@ -587,7 +618,7 @@
                                             esse obcaecati aliquam nulla laborum veritatis sequi, impedit sunt nam,
                                             possimus repellat nobis quisquam odit, esse obcaecati aliquam nulla laborum.
                                         </p>
-                                        <div id="serivces-02-btn">
+                                        <div id="serivces-02-btn-03">
                                             <a class="btn btn-general btn-yellow" href="#services" title="Get In Touch"
                                                 role="button">Get In Touch</a>
                                         </div>
@@ -621,7 +652,7 @@
                                             esse obcaecati aliquam nulla laborum veritatis sequi, impedit sunt nam,
                                             possimus repellat nobis quisquam odit, esse obcaecati aliquam nulla laborum.
                                         </p>
-                                        <div id="serivces-02-btn">
+                                        <div id="serivces-02-btn-04">
                                             <a class="btn btn-general btn-yellow" href="#services" title="Get In Touch"
                                                 role="button">Get In Touch</a>
                                         </div>
@@ -648,7 +679,7 @@
             <div class="container">
                 <div class="row">
 
-                    <div class="col-md-12">
+                    <div class="col-md-12 wow slideInLeft">
 
                         <div class="vertical-heading">
                             <h5>Find Out More</h5>
@@ -673,7 +704,7 @@
                 </div>
             </div>
 
-            <section id="portfoil-wrapper">
+            <section id="portfoil-wrapper" class="wow fadeInUp">
                 <div class="container-fluid">
                     <div class="row no-gutters">
                         <div id="isotope-container">
@@ -820,14 +851,14 @@
     <section id="testimonial">
         <div class="container">
             <div class="row">
-                <div class="col-md-4 col-sm-4">
+                <div class="col-md-4 col-sm-4 wow slideInLeft">
                     <div class="vertical-heading">
                         <h5>Who We Are</h5>
                         <h2>What Our <br><strong>Customers</strong> Say</h2>
                     </div>
                 </div>
 
-                <div class="col-md-8 col-sm-8">
+                <div class="col-md-8 col-sm-8 wow fadeIn" data-wow-duration="2s">
                     <div id="testimonial-slider" class="owl-carousel owl-theme">
 
                         <!-- testimonial 01 -->
@@ -973,7 +1004,7 @@
 
                 <div class="row">
 
-                    <div class="col-md-12 text-center">
+                    <div class="col-md-12 text-center wow slideInDown">
 
                         <div class="horizontal-heading">
                             <h5>Lovely Customers</h5>
@@ -983,7 +1014,7 @@
                 </div>
 
                 <div class="row">
-                    <div class="col-md-4 col-sm-4">
+                    <div class="col-md-4 col-sm-4 wow fadeInLeft">
 
                         <!-- Pricing Table 01 -->
                         <div class="pricing-table">
@@ -1015,14 +1046,14 @@
 
                             </ul>
 
-                            <div id="pricing-btn">
+                            <div id="pricing-btn-01">
                                 <a class="btn btn-general btn-yellow" href="#" title="Get Started" role="button">Get
                                     Started</a>
                             </div>
                         </div>
                     </div>
 
-                    <div class="col-md-4 col-sm-4">
+                    <div class="col-md-4 col-sm-4 wow fadeInUp" data-wow-duration="3s">
                         <!-- Pricing Table 02 -->
                         <div class="pricing-table black">
 
@@ -1052,7 +1083,7 @@
 
                             </ul>
 
-                            <div id="pricing-btn">
+                            <div id="pricing-btn-02">
                                 <a class="btn btn-general btn-white" href="#" title="Get Started" role="button">Get
                                     Started</a>
                             </div>
@@ -1061,7 +1092,7 @@
                     </div>
 
 
-                    <div class="col-md-4 col-sm-4">
+                    <div class="col-md-4 col-sm-4 wow fadeInRight">
                         <!-- Pricing Table 03 -->
                         <div class="pricing-table">
 
@@ -1091,7 +1122,7 @@
 
                             </ul>
 
-                            <div id="pricing-btn">
+                            <div id="pricing-btn-03">
                                 <a class="btn btn-general btn-yellow" href="#" title="Get Started" role="button">Get
                                     Started</a>
                             </div>
@@ -1112,7 +1143,7 @@
         <div class="content-box-md">
             <div class="container">
                 <div class="row">
-                    <div class="col-md-12">
+                    <div class="col-md-12 wow slideInLeft">
                         <div class="vertical-heading">
                             <h5>Fun Facts</h5>
                             <h2>We Deliver<br><strong>Excellent </strong>Services</h2>
@@ -1120,7 +1151,7 @@
                     </div>
                 </div>
 
-                <div class="row">
+                <div class="row wow fadeInUp" data-wow-duration="2s">
                     <div class="col-md-3 col-sm-3 col-xs-6">
                         <!-- stats-01 -->
                         <div class="stats-item text-center">
@@ -1166,7 +1197,7 @@
     <section id="clients">
         <div class="content-box-sm">
             <div class="container">
-                <div class="row">
+                <div class="row wow bounceInLeft" data-wow-duration="1s" data-wow-delay=".5s">
                     <div class="col-md-12">
 
                         <div class="horizontal-heading text-center">
@@ -1246,7 +1277,7 @@
             <div class="container">
                 <div class="row">
 
-                    <div class="col-md-5 col-sm-4">
+                    <div class="col-md-5 col-sm-4 wow slideInLeft">
                         <div class="blog-left">
                             <div class="vertical-heading">
                                 <h5>Latest News</h5>
@@ -1262,7 +1293,7 @@
                     </div>
 
                     <div class="col-md-7 col-sm-8">
-                        <div class="row">
+                        <div class="row wow fadeInUp" data-wow-duration="3s">
                             <div class="col-md-6 col-sm-6">
                                 <!-- Blog Post 1 -->
                                 <div class="blog-post">
@@ -1325,14 +1356,16 @@
             <div class="container">
                 <div class="row">
 
-                    <div class="col-md-6">
+                    <div class="col-md-6 wow fadeInLeft">
                         <!-- contact-left -->
                         <div id="contact-left">
                             <div class="vertical-heading">
                                 <h5>Who we are</h5>
                                 <h2>Get<br>In <strong>Touch</strong></h2>
                             </div>
-                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni quae, porro ab, laudantium soluta provident sed alias nisi molestiae, velit dicta illum facere vero dolores fugiat voluptas eius ut. Corrupti?</p>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni quae, porro ab, laudantium
+                                soluta provident sed alias nisi molestiae, velit dicta illum facere vero dolores fugiat
+                                voluptas eius ut. Corrupti?</p>
 
                             <div id="id">
                                 <div class="row">
@@ -1439,14 +1472,13 @@
         <div class="container">
             <div class="row">
                 <div class="col-md-12">
-                    <p>Copyright @copy; 2017 All Rights Reserved By <spvan>SOLO Inc</span>
-                    </p>
+                    <p>Copyright @copy; 2017 All Rights Reserved By <span>SOLO Inc</span></p>
                 </div>
             </div>
         </div>
 
-        <a href="#home" id="back-to-top" class="btn btn-sm btn-yellow btn-back-to-top smooth-scroll hidden-sm hidden-xs" title="home"
-            role="button">
+        <a href="#home" id="back-to-top" class="btn btn-sm btn-yellow btn-back-to-top smooth-scroll hidden-sm hidden-xs"
+            title="home" role="button">
             <i class="fa fa-angle-up"></i>
         </a>
 
@@ -1480,10 +1512,11 @@
     <!-- Ease jQuery -->
     <script src="./js/ease/jquery.easing.1.3.js"></script>
 
-    <script async defer
-        src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDtdT9zky6ttY1HijkeYnFQTqNlidB3HDU&callback=initMap"
-        type="text/javascript"></script>
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDtdT9zky6ttY1HijkeYnFQTqNlidB3HDU&callback=initMap"></script>
 
+    <script src="./js/wow/wow.min.js"></script>
+
+    <!-- Custom Script -->
     <script src="./js/script.js"></script>
 
 </body>

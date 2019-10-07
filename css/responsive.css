@@ -1,5 +1,77 @@
 /* Bootstrap 3 Media Queries */
+/* Mobile menu */
+.navbar-header {
+    position: relative;
+}
 
+#mobile-nav-open-btn {
+    font-size: 30px;
+    color: #f4c613;
+    cursor: pointer;
+    z-index: 2;
+    position: absolute;
+    right: 0;
+    top: 6px;
+    /* hide mobile nav btn */
+    display: none;
+}
+
+#mobile-nav {
+    /* By default mobile nav will hide as height with 0% */
+    height: 0%;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 3;
+    background-color: rgba(255, 255, 255, 0.9);
+    transition: all 300ms linear;
+    overflow: hidden;
+}
+
+#mobile-nav-close-btn {
+    font-family: 'Raleway', sans-serif;
+    font-size: 70px;
+    color: #212226;
+    font-weight: 300;
+    cursor: pointer;
+    position: absolute;
+    top: -9px;
+    right: 13px;
+    transition: .3s;
+}
+
+#mobile-nav-content {
+    text-align: center;
+    width: 100%;
+    margin-top: 30px;
+    position: relative;
+    top: 10%;
+}
+
+#mobile-nav ul li {
+    margin-bottom: 20px;
+}
+
+#mobile-nav a {
+    font-family: "Raleway", sans-serif;
+    font-size: 18px;
+    color: #212226;
+    text-transform: uppercase;
+    display: inline;
+    text-decoration: none;
+    transition: .3s;
+}
+
+#mobile-nav a:hover,
+#mobile-nav a:focus,
+#mobile-nav-close-btn:hover,
+#mobile-nav-close-btn:focus {
+    color: #f4c613;
+    background: none;
+}
+
+/* Bootstrap media query */
 /* Large Devices (Desktop & Laptops */
 @media (min-width: 1200px) and (max-width: 1299px) {
     .site-nav-wrapper {
@@ -101,10 +173,23 @@
 
 /* extra Small Devices */
 @media (max-width: 767px) {
+    .navbar {
+        padding: 20px 0;
+    }
+
+    .site-nav-wrapper,
+    .white-nav-top {
+        padding: 0;
+    }
+
+    #mobile-nav-open-btn {
+        display: block;
+    }
+
     #home-heading h1 {
         font-size: 22px;
     }
-    
+
     #home-text p {
         font-size: 13px;
         line-height: 18px;
@@ -162,7 +247,7 @@
         font-size: 18px;
     }
 
-    #team-left .vertical-heading{
+    #team-left .vertical-heading {
         min-height: 130px;
     }
 
@@ -177,7 +262,8 @@
     }
 
     .horizontal-heading {
-        margin-bottom: 40px;;
+        margin-bottom: 40px;
+        ;
     }
 
     .horizontal-heading h2 {
@@ -185,10 +271,11 @@
     }
 
     #services-01 img {
-        margin: 35px 0; 
+        margin: 35px 0;
     }
 
-    .service, .service .icon {
+    .service,
+    .service .icon {
         text-align: center;
     }
 
@@ -318,7 +405,7 @@
         margin-top: 25px;
     }
 
-    ul.office-details li i{
+    ul.office-details li i {
         width: auto;
         display: block;
         margin-bottom: 3px;
@@ -334,7 +421,7 @@
     #home-heading h1 {
         font-size: 18px;
     }
-    
+
     #home-text p {
         font-size: 11px;
         line-height: 16px;

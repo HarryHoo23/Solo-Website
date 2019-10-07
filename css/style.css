@@ -400,7 +400,8 @@ ul.social-list li:nth-child(3) a:hover {
 .about-item,
 .about-item i,
 .about-item h3,
-.about-item hr {
+.about-item hr,
+.about-item p {
     transition: all 400ms ease-in-out;
     -webkit-transition: all 400ms ease-in-out;
     -moz-transition: all 400ms ease-in-out;
@@ -1131,4 +1132,24 @@ ul.navbar-nav>li>a:focus {
 .white-nav-top ul.navbar-nav>li.active>a {
     color: #f4c613;
     font-weight: 500;
+}
+
+#home-heading-1 {
+    animation-duration: 1.5s;
+    animation-delay: 1s;
+}
+
+#home-heading-2 {
+    animation-duration: 1.5s;
+    animation-delay: 1.5s;
+}
+
+#home-text{
+    animation-duration: 1.5s;
+    animation-delay: 2s;
+}
+
+#arrow-down i {
+    animation-duration: 1.8s;
+    animation-delay: 2.7s;
 }

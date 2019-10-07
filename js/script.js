@@ -207,6 +207,12 @@ $(window).on('load', function () {
         infowindow.open(map, marker);
     });
 
+    google.maps.event.addDomListener(window, 'resize', function () {
+        var center = map.getCenter();
+        google.maps.event.trigger(map, 'resize');
+        map.setCenter(center);
+    });
+
 })
 
 
@@ -252,4 +258,30 @@ $(function () {
             scrollTop: $(section_id).offset().top - 50
         }, 1200, "easeInOutQuint");
     });
+})
+
+// Mobile Menu
+$(function () {
+    // Click open button, change the css style of the mobile-nav elements.
+    $("#mobile-nav-open-btn").click(function () {
+        $("#mobile-nav").css("height", "100%");
+    });
+
+    $("#mobile-nav-close-btn, #mobile-nav a").click(function () {
+        $("#mobile-nav").css("height", "0%");
+    });
+
+})
+
+
+// WOW animation initialize
+$(function(){
+    new WOW().init();
+})
+
+$(window).on('load',function() {
+    $("#home-heading-1").addClass("animated fadeInDown");
+    $("#home-heading-2").addClass("animated fadeInLeft");
+    $("#home-text").addClass("animated zoomIn");
+    $("#arrow-down i").addClass("animated fadeInDown infinite");
 })
